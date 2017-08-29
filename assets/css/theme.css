@@ -26,8 +26,10 @@
 .form-signin .form-control:focus {
     z-index: 2;
 }
+#navbar-main {
+    margin-bottom: 60px;
+}
 footer {
-    background: #CCC;
     clear: both;
     padding: 30px;
 }

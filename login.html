@@ -15,7 +15,7 @@
   <body>   
     <div class="container">
       <header>
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-default" id="navbar-main">
           <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -64,6 +64,11 @@
                 <li class="list-group-item">
                   <label for="inputPassword" class="sr-only">Senha</label>
                   <input type="password" id="inputPassword" class="form-control" placeholder="Sua senha" required>
+                </li>
+                <li class="list-group-item">
+                  <label>Tipo de acesso:</label>&nbsp;&nbsp;
+                  <label><input name="access_type" type="radio" checked>&nbsp;Aluno</label>&nbsp;
+                  <label><input name="access_type" type="radio">&nbsp;Administrador</label>
                 </li>
                 <li class="list-group-item">
                   <a href="/" onclick="alert('Que bom')">Esqueci minha senha</a>
