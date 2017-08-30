@@ -13,48 +13,32 @@
     <link href="assets/css/theme.css" rel="stylesheet" />
   </head>
   <body>    
-    <div>
-      <div class="container">
-        <header>
-          <nav class="navbar navbar-default">
-            <div class="container-fluid">
-              <!-- Brand and toggle get grouped for better mobile display -->
-              <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">IFSP</a>
-              </div>
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                  <li class="active">
-                    <a href="#">Home <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li>
-                    <a href="login.html">Entrar</a>
-                  </li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                  <li><a href="#">Contato</a></li>
-                </ul>
-              </div><!-- /.navbar-collapse -->
-            </div><!-- /.container-fluid -->
-          </nav>
-        </header>
-      </div>
-    </div>
     <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html">Entrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tickets.html">Tickets</a>
+            </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">SAC</h3>
+      </div>        
       <div class="col-xs-12">
         <div class="row">
           <div class="col-xs-12">
-            <h1 class="display-3">IFSP Sac</h1>
-            <br />
-            <figure class="pull-left" style="margin-right: 30px">
-              <img alt="Marca da instituição" class="img-responsive" src="assets/images/ifsp.png" />
-            </figure>
+            <center>
+              <figure>
+                <img alt="Marca da instituição" class="img-responsive" src="assets/images/ifsp.png" />
+              </figure>
+            </center>
+            <br /><br />
             <p>
               O IFSP Sac é um sistema que visa fornecer um meio de organizar solicitações de suporte para
               a equipe de infra-estrutura do IFSP de Piracicaba. Alunos, docentes e funcionários podem acessar
@@ -80,10 +64,10 @@
             <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
           </div>
         </div>
-        <br /><br />
       </div>
     </div>
-    <footer>
+    <br />
+    <footer class="footer">
       <div class="container">
         <div class="col-xs-12">
         &copy; 2017 <strong>IFSP SAC</strong>. Todos os direitos reservados.
