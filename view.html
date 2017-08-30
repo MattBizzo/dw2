@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,45 +30,48 @@
               <a class="nav-link" href="new_ticket.html">Novo</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="tracking.html">Acompanhamento <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="tracking.html">Acompanhamento</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="view.html">Ver</a>
+              <a class="nav-link active" href="view.html">Ver <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </nav>
         <h3 class="text-muted">IFReport</h3>
-      </div>      
+      </div>   
       <div class="col-xs-12">
-        <div class="card w-100">
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+            <h1 class="display-3">Peças & Equipamentos</h1>
+            <br />
+            <h5>Assunto: Equipamentos B9 não funcionam</h5>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            29/08/2017 - 22h00
+          </div>
           <div class="card-body">
-            <h4 class="card-title">Ticket 1</h4>
-            <p class="card-text">Instalação do Ubuntu Server no laboratório B9.</p>
-            <span class="badge badge-secondary">New</span>
+            <blockquote class="blockquote mb-0">
+              <p>Olá. Precisamos do suporte até o final de semana que vem, pois começarão as aulas práticas no laboratório.</p>
+              <footer class="blockquote-footer">disse Usuário Tal</footer>
+            </blockquote>
           </div>
         </div>
         <br />
-        <div class="card w-100">
+        <div class="card">
+          <div class="card-header"></div>
           <div class="card-body">
-            <h4 class="card-title">Ticket 2</h4>
-            <p class="card-text">Computador X15 da sala B21 não inicializa.</p>
-            <span class="badge badge-primary">Em Andamento</span>            
-          </div>
-        </div>
-        <br />
-        <div class="card w-100">
-          <div class="card-body">
-            <h4 class="card-title">Ticket 3</h4>
-            <p class="card-text">Fios expostos na sala B9.</p>
-            <span class="badge badge-info">Agendado</span>
-          </div>
-        </div>
-        <br />
-        <div class="card w-100">
-          <div class="card-body">
-            <h4 class="card-title">Ticket 4</h4>
-            <p class="card-text">Laboratórios do Bloco C não tem acesso à internet.</p>
-            <span class="badge badge-danger">Cancelado</span>
+            <div class="card-text">
+              <form>
+                <div class="form-group">
+                  <label for="message">Digite sua mensagem</label>
+                  <textarea class="form-control" id="message" rows="3" placeholder="max.: 500 caracteres"></textarea>
+                  <br />
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
