@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Memorandos
+namespace Memos
 {
     public class FilterConfig
     {
