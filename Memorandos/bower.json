@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "bootstrap": "v4.0.0-beta"
+  },
+  "name": "Memorandos",
+  "private": true,
+  "resolutions": {
+    "bootstrap": "v4.0.0-beta"
+  }
+}

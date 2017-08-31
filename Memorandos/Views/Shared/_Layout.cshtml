@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--link rel="icon" href="../../../../favicon.ico"-->
+    <title>IFReport</title>
+    @Styles.Render("~/bower_components/bootstrap/dist/css/bootstrap.min.css")
+    @Styles.Render("~/Content/Styles/Theme.css")
+</head>
+<body>
+    <div class="container">
+        <div class="header clearfix">
+            <nav>
+                <ul class="nav nav-pills float-right">
+                    <li class="nav-item">
+                        @Html.ActionLink("Início", "/", new {}, new { @class = "nav-link active" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Entrar", "SignIn", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Memorandos", "Memos", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Novo", "NewMemo", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Acompanhamento", "Tracking", new { }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Visão", "Show", new { }, new { @class = "nav-link" })
+                    </li>
+                </ul>
+            </nav>
+            <h3 class="text-muted">IFReport</h3>
+        </div>
+        <div class="container body-content">
+            @RenderBody()
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="col-xs-12">
+                &copy; 2017 <strong>IFReport</strong>. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+    @Scripts.Render("/bower_components/jquery/dist/jquery.min.js")
+    @Scripts.Render("/bower_components/popper.js/dist/umd/popper.min.js")
+    @Scripts.Render("/bower_components/bootstrap/dist/js/bootstrap.min.js")
+</body>
+</html>

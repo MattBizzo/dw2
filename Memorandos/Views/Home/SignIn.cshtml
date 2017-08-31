@@ -1,0 +1,67 @@
+﻿<div class="col-xs-12">
+    <div class="row">
+        <div class="col-md-6 col-sm-6 col-lg-6 col-xs-6">
+            <form class="form-signin">
+                <fieldset>
+                    <h2 class="form-signin-heading text-center">Entrar</h2>
+                    <br />
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <label for="inputEmail" class="sr-only">Email</label>
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Seu email" required autofocus>
+                        </li>
+                        <li class="list-group-item">
+                            <label for="inputPassword" class="sr-only">Senha</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Sua senha" required>
+                        </li>
+                        <li class="list-group-item">
+                            <label>Tipo de acesso:</label>&nbsp;&nbsp;
+                            <label><input name="access_type" type="radio" checked>&nbsp;Aluno</label>&nbsp;
+                            <label><input name="access_type" type="radio">&nbsp;Administrador</label>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="/" onclick="alert('Que bom')">Esqueci minha senha</a>
+                        </li>
+                        <li class="list-group-item">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col-md-6 col-sm-6 col-lg-6 col-xs-12">
+            <form class="form-signin" id="signup">
+                <fieldset>
+                    <h2 class="form-signin-heading text-center">Cadastrar</h2>
+                    <br />
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <label for="email" class="sr-only">Email address</label>
+                            <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+                        </li>
+                        <li class="list-group-item">
+                            <label for="name" class="sr-only">Nome</label>
+                            <input type="text" id="name" class="form-control" placeholder="Name" required autofocus>
+                        </li>
+                        <li class="list-group-item">
+                            <label for="last_name" class="sr-only">Sobrenome</label>
+                            <input type="text" id="last_name" class="form-control" placeholder="Last Name" required autofocus>
+                        </li>
+                        <li class="list-group-item">
+                            <label for="inputPassword" class="sr-only">Senha</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Sua senha" required>
+                        </li>
+                        <li class="list-group-item">
+                            <label for="inputPassword" class="sr-only">Confirme a senha</label>
+                            <input type="password" id="inputPassword" class="form-control" placeholder="Confirme a senha" required>
+                        </li>
+
+                        <li class="list-group-item">
+                            <button class="btn btn-lg btn-primary btn-block" type="submit">Cadastrar</button>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
