@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
@@ -9,7 +9,6 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>
     </ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{5E5994A6-C997-451A-AD50-4DE3B8463FC6}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
@@ -146,6 +145,14 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Memo.cs" />
+    <Compile Include="Models\Comment.cs" />
+    <Compile Include="Models\Admin.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
+    <Compile Include="Controllers\MemosController.cs" />
+    <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Models\MemoCategory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower_components\bootstrap\apple-touch-icon.png" />
@@ -468,10 +475,22 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Memos\Index.cshtml" />
+    <Content Include="Views\Auth\Index.cshtml" />
+    <Content Include="Views\Memos\Details.cshtml" />
+    <Content Include="Views\Memos\Tracking.cshtml" />
+    <Content Include="Views\Memos\New.cshtml" />
+    <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Users\Details.cshtml" />
+    <Content Include="Views\Users\New.cshtml" />
+    <Content Include="Views\Users\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Auth\" />
+    <Folder Include="Views\Memos\" />
+    <Folder Include="Views\Users\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".bowerrc" />
@@ -653,11 +672,6 @@
     <Content Include="bower_components\popper.js\yarn.lock" />
     <None Include="packages.config" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Home\Memos.cshtml" />
-    <Content Include="Views\Home\NewMemo.cshtml" />
-    <Content Include="Views\Home\Show.cshtml" />
-    <Content Include="Views\Home\SignIn.cshtml" />
-    <Content Include="Views\Home\Tracking.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="bower_components\popper.js\packages\popper\index.d.ts" />
@@ -693,6 +707,11 @@
         </WebProjectProperties>
       </FlavorProperties>
     </VisualStudio>
+    <MonoDevelop>
+      <Properties>
+        <XspParameters Port="8080" Address="127.0.0.1" SslMode="None" SslProtocol="Default" KeyType="None" CertFile="" KeyFile="" PasswordOptions="None" Password="" Verbose="True" />
+      </Properties>
+    </MonoDevelop>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
