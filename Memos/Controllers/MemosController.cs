@@ -1,4 +1,7 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using Memos.Models;
+using Memos.Models.ViewModels;
 
 namespace Memos.Controllers
 {
@@ -6,7 +9,17 @@ namespace Memos.Controllers
     {
         public ActionResult Index()
         {
-            return View ();
+            var user = new User() { firstName = "Danilo", lastName = "Carolino", id = 1 };
+            var memos = new List<Memo> {
+                new Memo() {id = 1, content = "Memorando 1", title = "Primeiro memorando", user = user },
+                new Memo() {id = 2, content = "Memorando 2", title = "Segundo memorando", user = user }
+            };
+            var viewModel = new MemosViewModel()
+            {
+                User = user,
+                Memos = memos
+            };
+            return View (viewModel);
         }
 
         public ActionResult Details(int id)

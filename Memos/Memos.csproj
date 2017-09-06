@@ -153,6 +153,8 @@
     <Compile Include="Controllers\MemosController.cs" />
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Models\MemoCategory.cs" />
+    <Compile Include="Models\ViewModels\MemosViewModel.cs" />
+    <Compile Include="Models\ViewModels\UsersViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bower_components\bootstrap\apple-touch-icon.png" />
@@ -491,6 +493,7 @@
     <Folder Include="Views\Auth\" />
     <Folder Include="Views\Memos\" />
     <Folder Include="Views\Users\" />
+    <Folder Include="Models\ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".bowerrc" />
